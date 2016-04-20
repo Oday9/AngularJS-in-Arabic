@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+         <title>AngularJS in Arabic</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    </head> 
+    <body>
+        <h1>Welcome to AngularJS</h1>
+        <h2>No Angular</h2>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name..."/>
+        <div id="welcomeDiv">Welcome!</div>
+      
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(document).on('input', '#name', function() {
+                    $('#welcomeDiv').text("Welcome, " + $('#name').val() + "!");
+                });
+            });
+        </script>
+    </body>
+</html>
