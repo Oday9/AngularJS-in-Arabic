@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expressions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
+</head>
+<body ng-app>
+{{5+5}}
+<div ng-bind="4*4"></div>
+<div ng-init="firstName='Oday'">
+    <h1>{{firstName}}</h1>
+</div>
+<div ng-init="student={firstName:'Ahmad',lastName:'Alqarra'}">
+    <h1>{{student.lastName+firstName}}</h1>
+</div>
+<div ng-init="nums=[1,2,3,4]">
+    <h2 ng-bind="nums[2]"></h2>
+</div>
+</body>
+</html>
