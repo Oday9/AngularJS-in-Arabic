@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Directives </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+
+<div ng-controller="myCtrl">
+    <h2>{{age}}</h2>
+    <ul>
+        <li ng-repeat="student in students">
+            {{student.name}} : {{student.age}}
+        </li>
+    </ul>
+</div>
+
+<script>
+    var app = angular.module('myApp',[]);
+     app.controller('myCtrl',function($scope){
+         $scope.age = 23;
+         $scope.students = [{name:"Ahmad",age : 25},{name:"Ahmad2",age : 28},{name:"Ahmad",age : 29}];
+     });
+</script>
+</body>
+</html>
